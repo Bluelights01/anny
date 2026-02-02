@@ -1,0 +1,46 @@
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background-color: #41312a; /* teddy brown */
+  color: #f5eee8;           /* creamy fur white */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 24px rgba(59, 47, 42, 0.4);
+}
+
+.sidebar a {
+  color: #e8dcd3;
+  text-decoration: none;
+  padding: 10px 12px;
+  transition: all 0.25s ease;
+}
+
+.sidebar a:hover {
+  background-color: #41332a; /* caramel hug */
+  color: #fffaf5;
+}
+
+.sidebar-bottom-btn {
+  margin-top: auto;     
+  margin-right:4px;         /* stick to bottom */
+  width: 44px;
+  height: 44px;
+  padding: 0;                    /* SVG controls size */
+  border: none;
+  border-radius: 50%;            /* circle */
+  background-color: #6b4f3f;
+  color: #fff6ef;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(107, 79, 63, 0.35);
+  transition: background-color 0.2s, transform 0.15s, box-shadow 0.2s;
+}
+
+.sidebar-bottom-btn:hover {
+  background-color: #7a5a47;     /* caramel hover */
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(107, 79, 63, 0.45);
+}

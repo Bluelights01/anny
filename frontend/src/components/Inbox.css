@@ -1,0 +1,79 @@
+.inbox-container {
+    padding: 20px;
+    height: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.requests-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.request-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.user-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.request-card .avatar {
+    width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #a67c52;          /* honey brown avatar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff8f0;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 0 2px 6px rgba(166, 124, 82, 0.4);
+}
+
+.user-right {
+    display: flex;
+    gap: 10px;
+}
+
+.accept-btn, .reject-btn {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+    transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;
+}
+
+.accept-btn {
+    background-color: #a67c52;
+    color: #fff8f0;
+    box-shadow: 0 2px 6px rgba(166, 124, 82, 0.35);
+}
+
+.accept-btn:hover {
+    background-color: #8c6642;
+}
+
+.reject-btn {
+    background-color: #f0e6dd;
+    color: #6b4f3f;
+    box-shadow: 0 2px 6px rgba(75, 63, 54, 0.1);
+}
+
+.reject-btn:hover {
+    background-color: #e6dace;
+    color: #4b3f36;
+}

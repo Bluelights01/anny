@@ -1,0 +1,20 @@
+.new-chat-btn {
+  width: 100%;                  /* full width */
+  padding: 12px 20px;           /* more space on sides */
+  
+  border: none;
+  cursor: pointer;
+  text-align: left;             /* text to extreme left */
+  background-color: #6b4f3f;   /* honey brown */
+  color: #fff6ef;               /* creamy milk */
+  border-radius: 500px;         /* fully rounded ends */
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(107, 79, 63, 0.35);
+  transition: all 0.25s ease;
+  box-sizing: border-box;       /* ensures padding doesn't exceed width */
+}
+.new-chat-btn:hover {
+  background-color: #7a5a47; /* caramel */
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(107, 79, 63, 0.45);
+}

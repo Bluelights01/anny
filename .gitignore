@@ -1,0 +1,40 @@
+# --- Python / Virtual Environments ---
+.venv/
+venv/
+env/
+# --- Python / Virtual Environments ---
+.myvenv/
+myvenv/
+myenv/
+# Exclude python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Node / TypeScript ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+*.tsbuildinfo
+
+# --- Environment Secrets ---
+.env
+.env.local
+.env.development.local
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+
+# --- IDEs ---
+.vscode/
+.idea/
+
+# --- Testing / Coverage ---
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/

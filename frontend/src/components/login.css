@@ -1,0 +1,49 @@
+/* The login/signup box */
+.login-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 300px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Inputs */
+.login-box input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+/* Buttons */
+.login-box button {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* blue button */
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.login-box button:hover {
+  background-color: #0056b3; /* darker on hover */
+}
+
+/* Toggle link for switching login/signup */
+.toggle-link {
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.toggle-link:hover {
+  color: #0056b3;
+}
