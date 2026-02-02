@@ -13,7 +13,7 @@ export default function Inbox({ username }: InboxProps) {
     const fetchRequests = async () => {
       if (!username) return;
       try {
-        const response = await axios.post("http://127.0.0.1:8000/search/friends/read", {
+        const response = await axios.post("https://anny-uro3.onrender.com/search/friends/read", {
           username: username,
           field:"requests"
         });
@@ -29,7 +29,7 @@ export default function Inbox({ username }: InboxProps) {
 
   const handleAction = async (target: string, action: "accept" | "reject",source:string) => {
     try {
-      await axios.post(`http://127.0.0.1:8000/search/friends/${action}_request`, {
+      await axios.post(`https://anny-uro3.onrender.com/search/friends/${action}_request`, {
         source: source,
         target: target,
       });

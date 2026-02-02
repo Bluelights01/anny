@@ -15,7 +15,7 @@ function UserCard({ username, label, source, setUsers }: UserCardProps) {
 
   const handleSendRequest = async (): Promise<void> => {
     try {
-      await axios.post('http://127.0.0.1:8000/search/friends/send_request', {
+      await axios.post('https://anny-uro3.onrender.com/search/friends/send_request', {
         source: source,
         target: username
       });
@@ -59,7 +59,7 @@ export default function SearchFriend({username}:{username:string}){
           alert("enter a value");
           return;
         }
-        const response=await axios.post('http://127.0.0.1:8000/search/users',{
+        const response=await axios.post('https://anny-uro3.onrender.com/search/users',{
                 "query": usernameRef.current.value,
                 "username":username
         });

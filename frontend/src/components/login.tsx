@@ -35,7 +35,7 @@ export default function LoginWindow({ setLoggedIn ,setusername}:
                 alert("Passwords do not match");
                 return;
               }
-              const response=await axios.post('http://127.0.0.1:8000/auth/signup',{
+              const response=await axios.post('https://anny-uro3.onrender.com/auth/signup',{
                 "username": usernameRef.current.value,
                 "password": passwordRef.current.value
               });
@@ -51,7 +51,7 @@ export default function LoginWindow({ setLoggedIn ,setusername}:
               
             } else {
               console.log("Sending to FastAPI:", dataToSend);
-              const response=await axios.post('http://127.0.0.1:8000/auth/login',{
+              const response=await axios.post('https://anny-uro3.onrender.com/auth/login',{
                 "username": usernameRef.current.value,
                 "password": passwordRef.current.value
               });
